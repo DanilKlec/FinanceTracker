@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.14.36221.1 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Application", "FinanceTracker.Application\FinanceTracker.Application.csproj", "{596DC595-6BE3-48E4-9E28-C81035991F90}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A1FDCEE-2BC4-46AF-9E2E-8F36728E89F6} = {2A1FDCEE-2BC4-46AF-9E2E-8F36728E89F6}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.ConsoleUI", "FinanceTracker.ConsoleUI\FinanceTracker.ConsoleUI.csproj", "{EC98BC15-3289-4ED5-8B5E-D060C0535894}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A1FDCEE-2BC4-46AF-9E2E-8F36728E89F6} = {2A1FDCEE-2BC4-46AF-9E2E-8F36728E89F6}
+		{596DC595-6BE3-48E4-9E28-C81035991F90} = {596DC595-6BE3-48E4-9E28-C81035991F90}
+		{CC1E33F4-B35B-40EB-BDFB-7931A4A15B7A} = {CC1E33F4-B35B-40EB-BDFB-7931A4A15B7A}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTracker.Domain", "FinanceTracker.Domain\FinanceTracker.Domain.csproj", "{2A1FDCEE-2BC4-46AF-9E2E-8F36728E89F6}"
 EndProject
